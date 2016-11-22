@@ -9,5 +9,8 @@ When(/^I sign in using my credentials$/) do
 end
 
 Then(/^verify that i am signed in$/) do
+  #expect(page).to have_css('span', text: "Sriram")
   page.has_css?('span', text: "Sriram")
 end
+
+
